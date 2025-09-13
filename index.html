@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Finance Manager</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f8f8; }
+    .container { max-width: 600px; margin: 40px auto; background: #fff;
+                 padding: 24px; border-radius: 8px; box-shadow: 0 0 12px #ccc; }
+    h2 { text-align: center; }
+    form { display: flex; gap: 10px; margin-bottom: 20px; }
+    input, select, button { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+    table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+    th, td { padding: 10px; border-bottom: 1px solid #eee; text-align: left; }
+    th { background: #f0f0f0; }
+    .total { text-align: right; margin-top: 10px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Finance Manager</h2>
+    <form id="expense-form">
+      <input type="text" id="expense-name" placeholder="Expense Name" required />
+      <input type="number" id="expense-amount" placeholder="Amount" required />
+      <select id="expense-category" required>
+        <option value="" disabled selected>Category</option>
+        <option value="Budget">Budget</option>
+        <option value="Scholarship">Scholarship</option>
+        <option value="Loan">Loan</option>
+        <option value
